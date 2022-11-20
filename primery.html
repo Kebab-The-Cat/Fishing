@@ -1,0 +1,299 @@
+<html>
+	<head>
+		<title>Как работает фишинг?</title>
+		<meta charset="utf-8">
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none;
+  margin: 0px 0 5px;
+  padding: 70px 0 70px;
+  text-align: center;
+  background: lightgrey;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: black;}
+.menu-main a.current, .menu-main a:hover{color: red;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: gray;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+
+.title {
+	text-align: center;
+	padding-top:50px;
+	padding-bottom: 50px;
+	border: 3px solid black ;
+
+}
+
+.im {
+
+	padding-left: 250px;
+	padding-top: 20px;
+}
+
+.xtt {
+
+	padding-top: 150px;
+
+}
+
+.podval {
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: lightgrey;
+  padding-left: 40px;
+}
+
+.prim1 {
+
+	padding-top: 50px;
+	text-align: center;
+}
+
+.line {
+
+
+	padding-top: 70px;
+}
+
+
+
+.info {
+  background-color: #f9f9ff;
+  padding: 10px 25px;
+}
+
+.info__switch {
+  display: none;
+}
+
+.info__body {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.info__switch:checked~.info__body {
+  max-height: 100px;
+}
+
+.info__headline::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 4px;
+  border: 6px solid #39739d;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.info__switch:checked~.info__headline::before {
+  transform: rotate(180deg) translateY(6px);
+}
+
+.info__headline {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  user-select: none;
+  color: #39739d;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.info__headline:hover {
+  text-decoration: underline;
+}
+
+
+
+
+		</style>
+	</head>
+
+
+	<body>
+
+<ul class="menu-main">
+						<li><a href="index.html" >Главная</a></li>
+  						<li><a href="fishing.html">что такое фишинг?</a></li>
+  						<li><a href="primery.html" class="current">Как работает фишинг</a></li>
+  		  				<li><a href="antivi.html" >Антифишинг</a></li>
+  						<li><a href="zacit.html">Защита от фишинга</a></li>
+  						<li><a href="prov.html">Проверь себя!</a></li>
+					</ul>
+					<p><br>
+
+<p class="title"><font size="20">Как работает фишинг?</font></p>
+
+<img class="im" src="images/f4.jpg" width="700" align="left">
+
+
+<div class="xtt">
+<font size="6" color="black" face="Arial">
+<b>Интернет</b> - фишинг подразумевает несколько вариантов взаимодействия со своей жертвой. Хакеры ловко играют на психологии пользователей, используя разные типы и схемы атак.
+</font>
+</div><br><p></p>
+
+<div class="line">
+<hr><p>
+</div>
+
+
+<div class="prim1">
+
+<div class="info">
+	<input id="info__body_1" class="info__switch" type="checkbox">
+
+<label for="info__body_1" class="info__headline"><h1>1.Почтовый фишинг</h1></label>
+ <div class="info__body">
+<font size="4" color="black" face="Arial" >
+Злоумышленники отправляют пользователям письма под видом известного бренда: подделывают адрес, чтобы он напоминал официальный. Такие письма содержат характер срочности, например, сообщая получателю, что его личный счет был взломан, а потому он должен немедленно ответить. Их цель заключается в том, чтобы своей срочностью вызвать необдуманное, но определенное действие от жертвы, нажать на вредоносную ссылку, которая ведет на поддельную страницу авторизации. Там, введя свои регистрационные данные, жертва, передает свою личную информацию прямо в руки мошенника.
+Одна из вариаций почтового фишинга — клон-фишинг. Мошенники определяют, какими программами и магазинами вы часто пользуетесь, а затем отправляют письма якобы от этих брендов.
+</font>
+</div>
+</div>
+</div>
+<hr>
+
+
+
+<div class="prim1">
+<div class="info">
+	 <input id="info__body_2" class="info__switch" type="checkbox">
+
+
+	 <label for="info__body_2" class="info__headline"><h1>2.Телефонный фишинг</h1></label>
+	  <div class="info__body">
+<font size="4" color="black" face="Arial" >
+	Этот тип атаки разделяется на два подвида: вишинг и смишинг.
+Голосовой фишинг, или вишинг предполагает разговор по телефону. Преступник звонит жертве, давит на нее и создает повышенное чувство срочности, чтобы человек сообщил конфиденциальные данные.
+Мошенники часто представляются сотрудниками банков: они сообщают о заявках на кредит или подозрительных переводах, угрожают блокировкой, а затем требуют сообщить смс-код или оформить подозрительный перевод.
+В результате люди теряют все свои накопления.
+SMS-фишинг — один из самых простых видов фишинговых атак. В смишинге вместо звонков используют СМС-сообщения с вредоносными ссылками, которые маскируют под купоны и розыгрыши.
+</font>
+	</div>
+</div>
+
+</div>
+<hr>
+
+<div class="prim1">
+<div class="info">
+	 <input id="info__body_3" class="info__switch" type="checkbox">
+
+<label for="info__body_3" class="info__headline"><h1>3.Фишинг в социальных сетях.</h1></label>
+<div class="info__body">
+<font size="4" color="black" face="Arial">
+	Хакеры создают поддельные аккаунты в Instagram, ВКонтакте, Facebook, Twitter. Хакеры выдают себя за знакомого жертвы или аккаунт известной компании. Они присылают сообщения со ссылками на поддельные сайты, запрашивают личную информацию
+</font>
+</div>
+</div>
+</div>
+<hr>
+
+
+<div class="prim1">
+
+<div class="info">
+	 <input id="info__body_4" class="info__switch" type="checkbox">
+
+<label for="info__body_4" class="info__headline"><h1>4.Веб-фишинг.</h1></label>
+<div class="info__body">
+<font size="4" color="black" face="Arial">
+Подмена веб - сайта похожа на подмену электронной почты, Фишеры создают и публикуют веб-сайт, копируя дизайн, контент и пользовательский интерфейс законного веб-сайта. Некоторые мошенники также используют инструменты сокращения URL-адресов для создания аналогичного URL-адреса для поддельного сайта.<br><p>
+Главный метод этого вида — подмена сайта. Хакер создает страницу, практически не отличимую от сайта крупного бренда или компании. Вы используете свою учетную запись для входа, и злоумышленник получает доступ к реальному аккаунту.<br><p>
+Хакеры либо присылают ссылку через email, либо перенаправляют пользователей на поддельный сайт. Злоумышленники взламывают систему доменных имен (DNS), и когда пользователь хочет зайти на сайт, сервер открывает страницу-подделку.<br><p>
+У веб-фишинга несколько вариаций.<br><p>
+•Фишинг через поисковые системы. Такие мошенники таргетируются на людей, желающих что-то купить: их просят ввести конфиденциальную информацию, которую перехватывает хакер.<br><p>
+•«Атака на водопое». Хакеры выясняют, какие сайты часто посещают сотрудники компании, и подменяют адрес или добавляют к нему вредоносный код для скачивания.<br><p>
+•Всплывающие окна или уведомления веб-браузера. Когда человек кликает на кнопку «разрешить», на устройство загружается вредоносный код.<br><p>
+Перейдя по фишинговой ссылке вы рискуете получить вирус шпион , кейлогер или троян, так мошенники получат доступ не к одному вашему аккаунту , а ко всем и сразу , необнаружив во время угрозу вы сами будете долгое время передавать все свои персональные данные мошенникам
+</font>
+</div>
+</div>
+</div>
+
+<hr>
+
+<div class="tabl">
+	<table border="1" align="center">
+
+		<th><a href="primery.html"><img src="images/f3.jpg" width="90"><br>Примеры фишинга</a></th>
+		<th><a href="zacit.html"><img src="images/f3.jpg" width="90"><br>Защита от фишинга</a></th>
+		<th><a href="raznovid.html"><img src="images/f3.jpg" width="90"><br>Разновидности </a></th>
+		<th><a href="index.html"><img src="images/f3.jpg" width="90"><br>Осторожно, фишинг!</a></th>
+
+	</table>	
+</div>
+
+
+
+
+<p><br>
+
+<div class="podval">
+<font size="3" color="black" face="Arial">
+  Смирнов Артем. 2022
+</font> 
+</div>
+
+
+
+
+
+
+	</body>
+
+
+
+
+
+
+
+
+
+
+</html>
