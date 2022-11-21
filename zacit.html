@@ -1,0 +1,269 @@
+<html>
+
+	<head>
+		
+		<title>Как защититься?</title>
+		<meta charset="utf-8">
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none;
+  margin: 0px 0 5px;
+  padding: 70px 0 70px;
+  text-align: center;
+  background: lightgrey;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: black;}
+.menu-main a.current, .menu-main a:hover{color: red;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: gray;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+
+.title {
+	text-align: center;
+	padding-top:50px;
+	padding-bottom: 50px;
+	border: 3px solid black ;
+
+}
+
+.im {
+
+	padding-left: 300px;
+	padding-top: 20px;
+}
+
+.txt2 {
+
+  text-align: left;
+}
+
+.podval {
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: lightgrey;
+  padding-left: 40px;
+}
+
+
+.xtt {
+
+	padding-top: 30px;
+
+}
+
+.may {
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.info {
+  background-color: #f9f9ff;
+  padding: 10px 25px;
+}
+
+.info__switch {
+  display: none;
+}
+
+.info__body {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.info__switch:checked~.info__body {
+  max-height: 400px;
+}
+
+.info__headline::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 4px;
+  border: 1px solid #39739d;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.info__switch:checked~.info__headline::before {
+  transform: rotate(180deg) translateY(6px);
+}
+
+.info__headline {
+  display: block;
+  position: relative;
+  margin-bottom: 50px;
+  user-select: none;
+  color: #39739d;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.info__headline:hover {
+  text-decoration: underline;
+}
+
+.block {
+  padding-top: 40px;
+}
+
+
+
+		</style>
+	</head>
+
+
+
+
+
+	<body>
+		<ul class="menu-main">
+						<li><a href="index.html" >Главная</a></li>
+  						<li><a href="fishing.html" >что такое фишинг?</a></li>
+  						<li><a href="primery.html">как работает фишинг?</a></li>
+  	  					<li><a href="antivi.html" >Антифишинг</a></li>
+					
+  						<li><a href="zacit.html"class="current">Защита от фишинга</a></li>
+  						<li><a href="prov.html">Проверь себя!</a></li>
+					</ul>
+					<p><br>
+
+				<p class="title"><font size="20">Защита от <b>фишинга!</b></font></p>
+
+
+
+<div class="may">
+<h1>Как защититься от фишинга?</h1>
+</div>
+
+<font class="txt" size="6" face="Arial">
+	
+К сожалению не существует универсального способа защиты от фишинг угрозы.однако избежать потери данных и денежных средств в сети вполне возможно.важно соблюдать рекомендации и оставаться бдительным пользователем<br><p></p>
+</font>
+<hr>
+
+
+
+<table>
+
+
+<td>
+  <div class='block'>
+<div class="info">
+  <input id="info__body_1" class="info__switch" type="checkbox">
+
+<label for="info__body_1" class="info__headline"><h3>Рекомендации по защите от фишинга</h3></label>
+ <div class="info__body">
+
+<font class="txt2" size="4" face="Arial">
+<b>1</b>. Никогда не переходите по ссылкам от незнакомцев, будьте внимательны к тому, от кого пришла ссылка и куда она вас привела;<br><p>
+<b>2</b>. Не вводите свои логин и пароль, если у вас есть хотя бы малейшее подозрение, что сайт ведёт себя странно.<br><p>
+<b>3</b>. Почта — это ваш ключ ко всем аккаунтам – к ней нужен oтдельный, надёжный пароль.<br><p>
+<b>5</b>. Установите хорошую антивирусную программу.<br><p>
+<b>6</b>. Никому не сообщайте логин и пароль для входа в платежную систему банка.<br><p></p>
+</font>
+
+</div>
+
+</div>
+
+
+</div>    
+
+
+
+</td>
+</table>
+<hr>
+
+
+
+<p class="vide" align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/ts79iGvzN9A" title="YouTube video player" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+
+
+
+
+
+<hr>
+
+
+
+
+<br>
+
+
+
+
+<div class="tabl">
+	<table border="1" align="center">
+
+		<th><a href="primery.html"><img src="images/f3.jpg" width="90"><br>Примеры фишинга</a></th>
+		<th><a href="zacit.html"><img src="images/f3.jpg" width="90"><br>Защита от фишинга</a></th>
+		<th><a href="raznovid.html"><img src="images/f3.jpg" width="90"><br>Разновидности </a></th>
+		<th><a href="index.html"><img src="images/f3.jpg" width="90"><br>Осторожно, фишинг!</a></th>
+
+	</table>	
+</div>
+
+
+
+
+
+<p><br>
+<div class="podval">
+<font size="3" color="black" face="Arial">
+  Смирнов Артем. 2022
+</font> 
+</div>
+
+
+
+
+
+	</body>
+</html>
